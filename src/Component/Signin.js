@@ -20,7 +20,7 @@ const navigate=useNavigate()
         a.preventDefault()
         console.log(data)
         try{
-        const response = await axios.post('http://localhost:5000/api/User/login', data);
+        const response = await axios.post('https://interview/api/User/login', data);
         console.log(response.data);
         if (response) {
           localStorage.setItem('authid', response.data._id);
