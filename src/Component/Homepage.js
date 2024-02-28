@@ -25,7 +25,7 @@ function Homepage() {
     const fetchUserDetails = async () => {
       try {
         console.log("user id: ", userId);
-        const response = await axios.get(`http://localhost:5000/api/User/userDetails/${localStorage.getItem('authid')}`);
+        const response = await axios.get(`http://interview/api/User/userDetails/${localStorage.getItem('authid')}`);
         setUserDetails(response.data);
         console.log("data ", response.data);
         setLoading(false);
