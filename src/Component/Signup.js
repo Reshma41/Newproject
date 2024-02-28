@@ -30,7 +30,7 @@ function Signup() {
       formData.append('image', data.image);
       formData.append('stream', data.stream);
 
-      const response = await axios.post('http://localhost:5000/api/User/Adduser', formData, {
+      const response = await axios.post('http://interview/api/User/Adduser', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
