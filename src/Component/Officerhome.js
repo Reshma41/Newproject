@@ -11,7 +11,7 @@ function Officerhome() {
   useEffect(() => {
     const fetchResponses = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/Question/Responses');
+        const response = await axios.get('http:/interview/api/Question/Responses');
         console.log("data : ",response.data)
         setResponses(response.data);
         setLoading(false);
